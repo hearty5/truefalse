@@ -1,0 +1,41 @@
+{
+    "name": "hearty5/truefalse",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hearty5",
+            "email": "davidwebsitedev@gmail.com",
+            "homepage": "https://github.com/hearty5"
+        }
+    ],
+    "homepage": "https://github.com/hearty5/truefalse",
+    "keywords": ["Laravel", "TrueFalse"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hearty5\\TrueFalse\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hearty5\\TrueFalse\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hearty5\\TrueFalse\\TrueFalseServiceProvider"
+            ],
+            "aliases": {
+                "TrueFalse": "Hearty5\\TrueFalse\\Facades\\TrueFalse"
+            }
+        }
+    }
+}
