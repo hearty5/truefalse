@@ -63,7 +63,7 @@ class TrueFalseServiceProvider extends ServiceProvider
         // Publishing assets.
         $this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/hearty5'),
-        ], 'truefalse.views');
+        ], 'public');
 
         // Publishing the translation files.
         /*$this->publishes([
