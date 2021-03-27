@@ -13,9 +13,9 @@ class TrueFalseServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/views', 'hearty5');
+        $this->loadViewsFrom(__DIR__ . '/views', 'hearty5');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
     }
 
     /**
@@ -25,7 +25,7 @@ class TrueFalseServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/truefalse.php', 'truefalse');
+        $this->mergeConfigFrom(__DIR__ . '/../config/truefalse.php', 'truefalse');
 
         // Register the service the package provides.
         $this->app->singleton('truefalse', function ($app) {
@@ -52,7 +52,7 @@ class TrueFalseServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/truefalse.php' => config_path('truefalse.php'),
+            __DIR__ . '/../config/truefalse.php' => config_path('truefalse.php'),
         ], 'truefalse.config');
 
         // Publishing the views.
@@ -61,9 +61,9 @@ class TrueFalseServiceProvider extends ServiceProvider
         ], 'truefalse.views');*/
 
         // Publishing assets.
-        /*$this->publishes([
+        $this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/hearty5'),
-        ], 'truefalse.views');*/
+        ], 'truefalse.views');
 
         // Publishing the translation files.
         /*$this->publishes([
