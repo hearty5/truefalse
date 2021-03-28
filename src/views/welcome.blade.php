@@ -19,7 +19,7 @@
     </style>
    <!--  <script src="{{ mix('/js/app.js')}}" defer></script>
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css"> -->
-    <link href="vendor/hearty5/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="vendor/hearty5/resources/css/animate.css" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
