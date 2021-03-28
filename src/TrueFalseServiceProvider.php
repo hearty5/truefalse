@@ -16,11 +16,16 @@ class TrueFalseServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'hearty5');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-          // Publishing assets.
-          $this->publishes([
-            __DIR__.'/assets' => public_path('vendor/truefalse'),], 'public');
-            $this->publishes([
-                __DIR__.'/views' => resources_path('js/components'),]);
+        // Publishing assets.
+        $this->publishes([
+            __DIR__ . '/assets' => public_path('vendor/truefalse'),
+        ], 'public');
+        $this->publishes([
+            __DIR__ . '/assets/js/components' => resources_path('js/components'),
+        ]);
+        $this->publishes([
+            __DIR__ . '/views' => resources_path('/views'),
+        ]);
     }
 
     /**
