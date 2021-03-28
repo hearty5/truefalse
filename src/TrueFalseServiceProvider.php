@@ -18,8 +18,7 @@ class TrueFalseServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
           // Publishing assets.
           $this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/truefalse'),
-        ], 'public');
+            __DIR__.'/assets' => public_path('vendor/truefalse'),], 'public');
     }
 
     /**
