@@ -16,6 +16,10 @@ class TrueFalseServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'hearty5');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+          // Publishing assets.
+          $this->publishes([
+            __DIR__.'/../resources/assets' => public_path('vendor/hearty5'),
+        ], 'public');
     }
 
     /**
@@ -60,10 +64,6 @@ class TrueFalseServiceProvider extends ServiceProvider
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/hearty5'),
         ], 'truefalse.views');*/
 
-        // Publishing assets.
-        $this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/hearty5'),
-        ], 'public');
 
         // Publishing the translation files.
         /*$this->publishes([
