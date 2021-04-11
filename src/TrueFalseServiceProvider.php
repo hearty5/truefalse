@@ -20,7 +20,6 @@ class TrueFalseServiceProvider extends ServiceProvider
         $this->publishes([__DIR__ . '/assets' => public_path('vendor/truefalse'),], 'public');
         $this->publishes([ __DIR__ . '/views' => resource_path('views'),], 'public');
         $this->publishes([__DIR__ . '/assets/js/components' => resource_path('js/components'),], 'public');
-        $this->publishes([__DIR__ . '/models' => model_path('models'),], 'public');
     }
 
     /**
