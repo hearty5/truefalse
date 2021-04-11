@@ -17,8 +17,8 @@
             font-family: 'Nunito';
         }
     </style>
-   <!--  <script src="{{ mix('/js/app.js')}}" defer></script>
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css"> -->
+   <script src="{{ mix('/js/app.js')}}" defer></script>
+    <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css">
 <!--     <link href="{{asset('vendor/truefalse/css/animate.css')}}" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -33,7 +33,6 @@
     <div id="app">
 
         <true-false-component></true-false-component>
-        <p class="animate__animated animate__bounce">Hello World</p>
     </div>
 </body>
 

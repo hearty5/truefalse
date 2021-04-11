@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-     return view('welcome');
+     return view('quiz');
 });
 
 /* Route::get('/truefalse', function () {
@@ -28,3 +28,9 @@ Route::group(['namespace'=>'Hearty5\TrueFalse\Controllers'],function(){
     Route::put('/truefalse', 'App\Http\Controllers\TrueFalseController@update');
     Route::delete('/truefalse/{id}', 'App\Http\Controllers\TrueFalseController@destroy');
   });
+
+Route::get('/truefalse', 'App\Http\Controllers\TrueFalseController@index');
+Route::get('/truefalse/{id}', 'App\Http\Controllers\TrueFalseController@show');
+Route::post('/truefalse', 'App\Http\Controllers\TrueFalseController@store');
+Route::put('/truefalse', 'App\Http\Controllers\TrueFalseController@update');
+Route::delete('/truefalse/{id}', 'App\Http\Controllers\TrueFalseController@destroy');
