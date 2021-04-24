@@ -14,8 +14,8 @@ class TrueFalseServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__ . '/views', 'hearty5');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         // Publishing assets.
         $this->publishes([__DIR__ . '/assets' => public_path('vendor/truefalse'),], 'public');
         $this->publishes([ __DIR__ . '/views' => resource_path('views'),], 'public');
