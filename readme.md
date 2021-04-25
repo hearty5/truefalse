@@ -47,7 +47,6 @@ Make sure your database is configured correctly.
 
 ``` bash
 php artisan migrate
-});
 ```
 ## Change log
 
