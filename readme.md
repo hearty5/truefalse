@@ -21,7 +21,7 @@ $ php artisan vendor:publish --tag=public --force
 ```
 ## Usage
 
-To load the quiz view add the following line in your routes.web file.
+To load the quiz view add the following line in your routes/web.php file.
 
 ``` bash
 Route::get('/', function () {
