@@ -32,19 +32,15 @@ Route::get('/', function () {
 Run the following commands:
 ``` bash
 composer require laravel/ui
-});
 ```
 ``` bash
 php artisan ui vue
-});
 ```
 ``` bash
 npm install sweetalert --save
-});
 ```
 ``` bash
 npm install && npm run dev
-});
 ```
 
 Make sure your database is configured correctly.
