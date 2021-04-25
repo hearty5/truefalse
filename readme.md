@@ -5,8 +5,6 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-(This package is still in a testing phase)
-
 ## Installation
 
 Via Composer
@@ -20,14 +18,6 @@ $ composer require hearty5/truefalse
 $ php artisan vendor:publish --tag=public --force
 ```
 ## Usage
-
-To load the quiz view add the following line in your routes/web.php file.
-
-``` bash
-Route::get('/', function () {
-    return view(‘quiz’);
-});
-```
 
 Run the following commands:
 ``` bash
@@ -48,6 +38,16 @@ Make sure your database is configured correctly.
 ``` bash
 php artisan migrate
 ```
+
+To load the quiz view add the following line in your routes/web.php file.
+
+``` bash
+Route::get('/', function () {
+    return view(‘quiz’);
+});
+```
+You're all set! Fill in the questions and answers in the database!
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
