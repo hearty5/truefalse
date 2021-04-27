@@ -4,7 +4,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 
-https://github.com/hearty5/truefalse/blob/main/src/example/example.png
+![Quiz Example](https://github.com/hearty5/truefalse/blob/main/src/example/example.png)
 
 ## Installation
 
